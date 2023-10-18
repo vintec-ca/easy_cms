@@ -20,6 +20,7 @@ return new class extends Migration {
             $table->string('slug');
             $table->text('body');
             $table->string('image_url');
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }
