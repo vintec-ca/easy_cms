@@ -41,7 +41,7 @@ class PostResource extends Resource
                     ->disabled()
                     ->dehydrated()
                     ->maxLength(255),
-                Forms\Components\RichEditor::make('body')
+                Forms\Components\RichEditor::make('content')
                     ->required()
                     ->maxLength(65535)
                     ->columnSpanFull(),

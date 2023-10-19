@@ -18,7 +18,7 @@ return new class extends Migration {
             $table->foreign('category_id')->references('id')->on('categories');
             $table->string('title');
             $table->string('slug');
-            $table->text('body');
+            $table->text('content');
             $table->string('image_url');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
