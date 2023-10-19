@@ -38,6 +38,7 @@ class CategoryResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
                     ->required()
+                    ->unique()
                     ->disabled()
                     ->dehydrated()
                     ->maxLength(255),
