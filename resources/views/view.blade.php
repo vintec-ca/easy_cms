@@ -112,6 +112,16 @@
                 </a>
             </div>
 
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">{{ \Illuminate\Support\Str::plural(__('Category')) }}</p>
+                <ul role="list" class="space-y-4 pb-6 text-gray-900">
+                    @foreach ($categories as $category)
+                        <li>
+                            &#8226; <a href="{{ url('blog/category/'.$category->slug) }}">{{ $category->name }}</a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
 
         </aside>
 
