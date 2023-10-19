@@ -17,3 +17,5 @@ use App\Http\Controllers\FrontController;
 Route::get('/', [FrontController::class, 'index']);
 
 Route::get('/blog/{slug}', [FrontController::class, 'view']);
+Route::get('/blog/category/{slug}', [FrontController::class, 'category_filter']);
+Route::get('/blog/tag/{slug}', [FrontController::class, 'tag_filter']);

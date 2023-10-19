@@ -123,6 +123,17 @@
                 </ul>
             </div>
 
+            <div class="w-full bg-white shadow flex flex-col my-4 p-6">
+                <p class="text-xl font-semibold pb-5">{{ \Illuminate\Support\Str::plural(__('Tag')) }}</p>
+                <div class="flex flex-col md:flex-row">
+                    @foreach ($tags as $tag)
+                        <a href="{{ url('blog/tag/'.$tag->slug) }}" class="px-1">
+                            <span class="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">{{ $tag->name }}</span>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+
         </aside>
 
     </div>
