@@ -1,11 +1,18 @@
 {
+    "Author": "Autor",
     "Category": "Categoria",
+    "Content": "Contenido",
     "Created at": "Fecha de Creación",
     "Description": "Descripción",
     "Email verified at": "Fecha de Verificación",
+    "Image": "Imagen",
     "Name": "Nombre",
     "Password": "Contraseña",
+    "Post": "Publicación",
+    "Posts": "Publicaciones",
+    "Published at": "Publicado desde",
     "Tag": "Etiqueta",
+    "Title": "Título",
     "Updated at": "Fecha de Actualización",
     "User": "Usuario"
 }
