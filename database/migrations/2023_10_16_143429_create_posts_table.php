@@ -17,7 +17,7 @@ return new class extends Migration {
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
             $table->string('title');
-            $table->string('slug');
+            $table->string('slug')->unique();
             $table->text('content');
             $table->string('image_url');
             $table->timestamp('published_at')->nullable();
