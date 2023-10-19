@@ -14,6 +14,15 @@ class Post extends Model
 
     protected $guarded = [];
 
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'published_at' => 'datetime'
+    ];
+
     public function category() : BelongsTo
     {
         return $this->belongsTo(Category::class);
