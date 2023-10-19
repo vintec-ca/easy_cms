@@ -22,17 +22,25 @@ class UserResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
+    public static function getModelLabel(): string
+    {
+        return __('User');
+    }
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 //
                 TextInput::make('name')
+                ->translateLabel()
                 ->required(),
                 TextInput::make('email')
                 ->email()
+                ->unique()
                 ->required(),
                 TextInput::make('password')
+                ->translateLabel()
                 ->hiddenOn('edit')
                 ->password()
                 ->required(),
@@ -44,9 +52,11 @@ class UserResource extends Resource
         return $table
             ->columns([
                 //
-                TextColumn::make('name'),
+                TextColumn::make('name')
+                    ->translateLabel(),
                 TextColumn::make('email'),
                 TextColumn::make('email_verified_at')
+                    ->translateLabel()
             ])
             ->filters([
                 //

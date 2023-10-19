@@ -1,5 +1,11 @@
 {
     "Category": "Categoria",
+    "Created at": "Fecha de Creación",
     "Description": "Descripción",
-    "Name": "Nombre"
+    "Email verified at": "Fecha de Verificación",
+    "Name": "Nombre",
+    "Password": "Contraseña",
+    "Tag": "Etiqueta",
+    "Updated at": "Fecha de Actualización",
+    "User": "Usuario"
 }
