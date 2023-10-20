@@ -58,7 +58,7 @@ class PostResource extends Resource
                     ->maxLength(255),
                 Forms\Components\TextInput::make('slug')
                     ->required()
-                    ->unique()
+                    ->unique(ignoreRecord: true)
                     ->disabled()
                     ->dehydrated()
                     ->columnSpan(3)
